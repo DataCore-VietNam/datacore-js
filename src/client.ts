@@ -139,7 +139,7 @@ export class DataCore {
       Authorization: `Bearer ${this.apiKey}`,
       Accept: 'application/json',
       'User-Agent': '@datacore/sdk-js',
-      'X-Request-ID': crypto.randomUUID?.() ?? String(Date.now()),
+      'X-Request-ID': (globalThis as {crypto?:{randomUUID?:()=>string}}).crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2)}`,
     };
     let body: BodyInit | undefined;
     if (opts.body !== undefined) {
