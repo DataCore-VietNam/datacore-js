@@ -1,0 +1,25 @@
+{
+  "name": "@datacore/sdk",
+  "version": "0.1.0",
+  "description": "Official JavaScript / TypeScript client for DataCore",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {".":{"types":"./dist/index.d.ts","import":"./dist/index.js"}},
+  "scripts": {"build":"tsup","test":"vitest run","test:watch":"vitest","lint":"eslint src","typecheck":"tsc --noEmit"},
+  "keywords": ["vietnam","finance","stocks","hose","hnx","datacore","fintech"],
+  "author": "DataCore Vietnam <dev@datacore.vn>",
+  "license": "MIT",
+  "repository": {"type":"git","url":"https://github.com/DataCore-VietNam/datacore-js"},
+  "engines": {"node": ">=18"},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0"
+  }
+}
