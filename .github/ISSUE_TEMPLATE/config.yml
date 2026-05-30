@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: DataCore documentation
+    url: https://datacore.vn/docs
+    about: Full API reference and guides
+  - name: Support
+    url: https://datacore.vn/support
+    about: Contact DataCore support
