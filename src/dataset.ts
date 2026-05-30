@@ -209,7 +209,7 @@ export class Dataset {
       page++;
     }
 
-    await new Promise<void>((resolve, reject) => stream.end(err => err ? reject(err) : resolve()));
+    await new Promise<void>((resolve, reject) => stream.end((err: Error|null) => err ? reject(err) : resolve()));
     return { bytesWritten, rowsWritten, pagesDownloaded };
   }
 }
