@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest an improvement to @datacore/sdk
+labels: [enhancement]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed API
+      render: typescript
